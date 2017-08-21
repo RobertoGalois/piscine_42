@@ -1,4 +1,4 @@
-#I did it this way, it really
+#I did it this way
 echo $((`echo $FT_NBR1 | tr "'"'"''!''?''\' '02431' 2>/dev/null | xargs echo 'ob    ase=10;ibase=5;' | bc`+`echo $FT_NBR2 | tr 'mrdoc' '01234' 2>/dev/null | xargs e    cho 'obase=10;ibase=5;' | bc`)) | xargs echo 'obase=13;ibase=10;' | bc | tr '012    3456789ABCD' 'gtaio luSnemf'
 
 #BUT: it works for the first value of the exercice but doesn't work for the seconds values (that is suppose to give "segmentation fault"),
